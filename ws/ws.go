@@ -7,16 +7,17 @@ import (
 	"encoding/hex"
 	"errors"
 	"fmt"
-	"github.com/chuckpreslar/emission"
-	"github.com/frankrap/bybit-api/recws"
-	"github.com/gorilla/websocket"
-	"github.com/tidwall/gjson"
 	"log"
 	"net/http"
 	"net/url"
 	"strings"
 	"sync"
 	"time"
+
+	"github.com/arphios/bybit-api/recws"
+	"github.com/chuckpreslar/emission"
+	"github.com/gorilla/websocket"
+	"github.com/tidwall/gjson"
 )
 
 const (

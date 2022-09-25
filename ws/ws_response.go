@@ -89,40 +89,40 @@ type Execution struct {
 	OrderID     string    `json:"order_id"`
 	ExecID      string    `json:"exec_id"`
 	OrderLinkID string    `json:"order_link_id"`
-	Price       float64   `json:"price,string"`
+	Price       float64   `json:"price"`
 	OrderQty    float64   `json:"order_qty"`
 	ExecType    string    `json:"exec_type"`
 	ExecQty     float64   `json:"exec_qty"`
-	ExecFee     float64   `json:"exec_fee,string"`
+	ExecFee     float64   `json:"exec_fee"`
 	LeavesQty   float64   `json:"leaves_qty"`
 	IsMaker     bool      `json:"is_maker"`
 	TradeTime   time.Time `json:"trade_time"`
 }
 
 type Position struct {
-	UserID           int64   `json:"user_id"`
+	UserID           int64   `json:"user_id,string"`
 	Symbol           string  `json:"symbol"`
 	Size             float64 `json:"size"`
 	Side             string  `json:"side"`
-	PositionValue    float64 `json:"position_value,string"`
-	EntryPrice       float64 `json:"entry_price,string"`
-	LiqPrice         float64 `json:"liq_price,string"`
-	BustPrice        float64 `json:"bust_price,string"`
-	Leverage         float64 `json:"leverage,string"`
-	OrderMargin      float64 `json:"order_margin,string"`
-	PositionMargin   float64 `json:"position_margin,string"`
+	PositionValue    float64 `json:"position_value"`
+	EntryPrice       float64 `json:"entry_price"`
+	LiqPrice         float64 `json:"liq_price"`
+	BustPrice        float64 `json:"bust_price"`
+	Leverage         float64 `json:"leverage"`
+	OrderMargin      float64 `json:"order_margin"`
+	PositionMargin   float64 `json:"position_margin"`
 	AvailableBalance float64 `json:"available_balance,string"`
-	TakeProfit       float64 `json:"take_profit,string"`
-	StopLoss         float64 `json:"stop_loss,string"`
-	RealisedPnl      float64 `json:"realised_pnl,string"`
-	TrailingStop     float64 `json:"trailing_stop,string"`
-	TrailingActive   float64 `json:"trailing_active,string"`
+	TakeProfit       float64 `json:"take_profit"`
+	StopLoss         float64 `json:"stop_loss"`
+	RealisedPnl      float64 `json:"realised_pnl"`
+	TrailingStop     float64 `json:"trailing_stop"`
+	TrailingActive   float64 `json:"trailing_active"`
 	WalletBalance    float64 `json:"wallet_balance,string"`
-	RiskID           int     `json:"risk_id"`
-	OccClosingFee    float64 `json:"occ_closing_fee,string"`
-	OccFundingFee    float64 `json:"occ_funding_fee,string"`
-	AutoAddMargin    int     `json:"auto_add_margin"`
-	CumRealisedPnl   float64 `json:"cum_realised_pnl,string"`
+	RiskID           int     `json:"risk_id,string"`
+	OccClosingFee    float64 `json:"occ_closing_fee"`
+	OccFundingFee    float64 `json:"occ_funding_fee"`
+	AutoAddMargin    int     `json:"auto_add_margin,string"`
+	CumRealisedPnl   float64 `json:"cum_realised_pnl"`
 	PositionStatus   string  `json:"position_status"`
-	PositionSeq      int64   `json:"position_seq"`
+	PositionSeq      int64   `json:"position_seq,string"`
 }
