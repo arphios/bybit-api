@@ -112,7 +112,7 @@ func (b *ByBit) GetActiveOrders(symbol string) (query string, resp []byte, resul
 
 // CreateOrder
 func (b *ByBit) CreateOrder(side string, orderType string, price float64,
-	qty float64, timeInForce string, takeProfit float64, stopLoss float64, reduceOnly bool,
+	qty int, timeInForce string, takeProfit float64, stopLoss float64, reduceOnly bool,
 	closeOnTrigger bool, orderLinkID string, symbol string) (query string, resp []byte, result Order, err error) {
 	var cResult OrderResponse
 	params := map[string]interface{}{}

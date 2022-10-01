@@ -73,7 +73,7 @@ func TestByBit_CreateOrder(t *testing.T) {
 	symbol := "BTCUSD"
 	side := "Buy" // Buy Sell
 	orderType := "Limit"
-	qty := 30.
+	qty := 30
 	price := 5000.0
 	timeInForce := "GoodTillCancel"
 	_, _, order, err := b.CreateOrder(
