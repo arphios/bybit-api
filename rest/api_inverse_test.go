@@ -1,9 +1,10 @@
 package rest
 
 import (
-	"github.com/stretchr/testify/assert"
 	"testing"
 	"time"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func TestByBit_GetOrderBook(t *testing.T) {
@@ -72,7 +73,7 @@ func TestByBit_CreateOrder(t *testing.T) {
 	symbol := "BTCUSD"
 	side := "Buy" // Buy Sell
 	orderType := "Limit"
-	qty := 30
+	qty := 30.
 	price := 5000.0
 	timeInForce := "GoodTillCancel"
 	_, _, order, err := b.CreateOrder(
